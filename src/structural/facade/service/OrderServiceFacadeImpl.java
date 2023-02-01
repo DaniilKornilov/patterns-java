@@ -1,4 +1,6 @@
-package structural.facade;
+package structural.facade.service;
+
+import structural.facade.bo.Product;
 
 public class OrderServiceFacadeImpl implements OrderServiceFacade {
 

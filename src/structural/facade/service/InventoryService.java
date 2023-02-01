@@ -1,4 +1,6 @@
-package structural.facade;
+package structural.facade.service;
+
+import structural.facade.bo.Product;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package structural.facade;
+package structural.facade.service;
 
 public class PaymentService {
 
