@@ -8,4 +8,5 @@ public class RussianPlugConnectorImpl implements RussianPlugConnector {
     public void provideElectricity() {
         System.out.println(PROVIDE_ELECTRICITY_MESSAGE);
     }
+
 }

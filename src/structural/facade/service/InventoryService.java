@@ -17,4 +17,5 @@ public class InventoryService {
         System.out.println("Checking if product: " + product.name() + " is available");
         return products.contains(product);
     }
+
 }

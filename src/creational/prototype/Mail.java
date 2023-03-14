@@ -17,4 +17,5 @@ public record Mail(String text) implements Cloneable {
         }
 
     }
+
 }

@@ -8,4 +8,5 @@ public class Hoplite extends Soldier {
     public String getName() {
         return HOPLITE_NAME;
     }
+
 }

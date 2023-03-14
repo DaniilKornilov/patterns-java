@@ -12,4 +12,5 @@ public class Main {
         Pizza cheeseTopping = new CheeseToppingPizza(pizza);
         System.out.println(cheeseTopping.getPrice());
     }
+
 }

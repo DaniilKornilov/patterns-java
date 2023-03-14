@@ -6,4 +6,5 @@ public class BasicPizza implements Pizza {
     public int getPrice() {
         return 10;
     }
+
 }

@@ -1,6 +1,10 @@
 package structural.adapter;
 
-import structural.adapter.connector.*;
+import structural.adapter.connector.RussianPlugConnector;
+import structural.adapter.connector.RussianPlugConnectorImpl;
+import structural.adapter.connector.RussianToUsPlugConnectorAdapter;
+import structural.adapter.connector.UsPlugConnector;
+import structural.adapter.connector.UsPlugConnectorImpl;
 import structural.adapter.socket.RussianElectricalSocket;
 import structural.adapter.socket.UsElectricalSocket;
 
@@ -20,4 +24,5 @@ public class Main {
         UsElectricalSocket usElectricalSocketForAdapter = new UsElectricalSocket(usPlugConnectorAdapter);
         usElectricalSocketForAdapter.plugIn();
     }
+
 }

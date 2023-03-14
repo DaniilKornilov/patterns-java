@@ -14,4 +14,5 @@ public class RussianElectricalSocket implements ElectricalSocket {
     public void plugIn() {
         russianPlugConnector.provideElectricity();
     }
+
 }

@@ -8,4 +8,5 @@ public class Triremes extends Navy {
     public String getName() {
         return TRIREMES_NAME;
     }
+
 }

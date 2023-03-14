@@ -8,4 +8,5 @@ public class UsPlugConnectorImpl implements UsPlugConnector {
     public void supplyElectricity() {
         System.out.println(PROVIDE_ELECTRICITY_MESSAGE);
     }
+
 }

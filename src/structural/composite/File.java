@@ -7,4 +7,5 @@ public record File(String name) implements Component {
         String message = String.format("Searching for keyword %s in file %s", keyword, name);
         System.out.println(message);
     }
+
 }

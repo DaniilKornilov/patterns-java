@@ -8,4 +8,5 @@ public class Legionnaire extends Soldier {
     public String getName() {
         return LEGIONNAIRE_NAME;
     }
+
 }

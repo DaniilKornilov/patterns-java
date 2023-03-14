@@ -8,4 +8,5 @@ public abstract class ArmyFactory {
     public abstract Soldier createSoldier();
 
     public abstract Navy createNavy();
+
 }

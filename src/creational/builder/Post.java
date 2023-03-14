@@ -1,10 +1,15 @@
 package creational.builder;
 
 public class Post {
+
     private final String title;
+
     private final String author;
+
     private final String datePosted;
+
     private final int numberOfWords;
+
     private final int numberOfCharacters;
 
     private Post(Builder builder) {
@@ -27,10 +32,15 @@ public class Post {
     }
 
     public static class Builder {
+
         private final String title;
+
         private final String author;
+
         private String datePosted = "";
+
         private int numberOfWords = 0;
+
         private int numberOfCharacters = 0;
 
         public Builder(String title, String author) {
@@ -56,5 +66,7 @@ public class Post {
         public Post build() {
             return new Post(this);
         }
+
     }
+
 }

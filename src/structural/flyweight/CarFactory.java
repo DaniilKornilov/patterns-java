@@ -4,10 +4,10 @@ import java.util.HashMap;
 
 public class CarFactory {
 
+    private static final HashMap<String, Car> colorToCarMap = new HashMap<>();
+
     private CarFactory() {
     }
-
-    private static final HashMap<String, Car> colorToCarMap = new HashMap<>();
 
     public static Car getCar(String color) {
         Car car = colorToCarMap.getOrDefault(color, new Car(color));
@@ -16,4 +16,5 @@ public class CarFactory {
         }
         return car;
     }
+
 }

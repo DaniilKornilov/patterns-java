@@ -43,4 +43,5 @@ public class BasicRemote implements Remote {
         System.out.println("Remote: channel up");
         device.setChannel(device.getChannel() + 1);
     }
+
 }

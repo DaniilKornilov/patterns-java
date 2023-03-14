@@ -8,4 +8,5 @@ public class MacButton extends Button {
     public void click() {
         System.out.println(OS_TYPE + " " + BUTTON_CLICK);
     }
+
 }

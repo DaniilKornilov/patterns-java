@@ -16,4 +16,5 @@ public class GreekArmyFactory extends ArmyFactory {
     public Navy createNavy() {
         return new Triremes();
     }
+
 }

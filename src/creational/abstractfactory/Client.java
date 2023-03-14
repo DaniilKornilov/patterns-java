@@ -22,4 +22,5 @@ public class Client {
     public String getNavy() {
         return navy.getName();
     }
+
 }

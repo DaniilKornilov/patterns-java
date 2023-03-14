@@ -14,4 +14,5 @@ public class UsElectricalSocket implements ElectricalSocket {
     public void plugIn() {
         usPlugConnector.supplyElectricity();
     }
+
 }

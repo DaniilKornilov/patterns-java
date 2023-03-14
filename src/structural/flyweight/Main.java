@@ -17,4 +17,5 @@ public class Main {
 
         System.out.println(System.identityHashCode(blueCar1) == System.identityHashCode(greenCar));
     }
+
 }

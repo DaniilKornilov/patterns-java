@@ -7,10 +7,6 @@ public class Database {
     private Database() {
     }
 
-    private static class SingletonDatabaseHelper {
-        private static final Database INSTANCE = new Database();
-    }
-
     public static Database getInstance() {
         return SingletonDatabaseHelper.INSTANCE;
     }
@@ -25,4 +21,11 @@ public class Database {
                 "name='" + name + '\'' +
                 '}';
     }
+
+    private static class SingletonDatabaseHelper {
+
+        private static final Database INSTANCE = new Database();
+
+    }
+
 }

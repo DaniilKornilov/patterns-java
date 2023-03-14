@@ -16,4 +16,5 @@ public class RomanArmyFactory extends ArmyFactory {
     public Navy createNavy() {
         return new LongShip();
     }
+
 }

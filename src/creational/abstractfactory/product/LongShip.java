@@ -8,4 +8,5 @@ public class LongShip extends Navy {
     public String getName() {
         return LONG_SHIP_NAME;
     }
+
 }

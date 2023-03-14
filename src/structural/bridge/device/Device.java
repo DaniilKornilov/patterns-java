@@ -15,4 +15,5 @@ public interface Device {
     int getChannel();
 
     void setChannel(int channel);
+
 }

@@ -25,4 +25,5 @@ public class Folder implements Component {
     public void add(Component component) {
         components.add(component);
     }
+
 }

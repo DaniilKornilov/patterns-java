@@ -5,6 +5,7 @@ import creational.abstractfactory.factory.GreekArmyFactory;
 import creational.abstractfactory.factory.RomanArmyFactory;
 
 public class Main {
+
     public static void main(String[] args) {
         Client client = new Client();
 
@@ -21,4 +22,5 @@ public class Main {
         System.out.println(client.getNavy());
         System.out.println(client.getSoldier());
     }
+
 }
