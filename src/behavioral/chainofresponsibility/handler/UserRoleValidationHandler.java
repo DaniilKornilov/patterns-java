@@ -4,6 +4,7 @@ import static behavioral.chainofresponsibility.Credentials.ADMIN_EMAIL;
 
 public class UserRoleValidationHandler extends AuthenticationHandler {
 
+    @Override
     public boolean check(String email, String password) {
         if (email.equals(ADMIN_EMAIL)) {
             System.out.println("Hello, admin!");

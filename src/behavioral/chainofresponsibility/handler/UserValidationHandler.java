@@ -10,6 +10,7 @@ public class UserValidationHandler extends AuthenticationHandler {
         this.server = server;
     }
 
+    @Override
     public boolean check(String email, String password) {
         if (!server.hasEmail(email)) {
             System.out.println("User is not registered!");

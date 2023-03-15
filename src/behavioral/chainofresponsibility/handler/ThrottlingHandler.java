@@ -12,6 +12,7 @@ public class ThrottlingHandler extends AuthenticationHandler {
         this.requestsPerMinute = requestsPerMinute;
     }
 
+    @Override
     public boolean check(String email, String password) {
         if (System.currentTimeMillis() > currentTime + 60_000) {
             currentRequestNumber = 0;
