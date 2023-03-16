@@ -1,9 +1,9 @@
-package creational.factorymethod.creator;
+package creational.factorymethod.dialogwindow;
 
 import creational.factorymethod.button.Button;
 import creational.factorymethod.button.MacButton;
 
-public class MacButtonCreator extends ButtonCreator {
+public class MacDialogWindow extends DialogWindow {
 
     @Override
     public Button createButton() {

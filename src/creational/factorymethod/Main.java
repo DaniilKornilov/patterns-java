@@ -1,21 +1,31 @@
 package creational.factorymethod;
 
-import creational.factorymethod.creator.ButtonCreator;
-import creational.factorymethod.creator.MacButtonCreator;
-import creational.factorymethod.creator.WindowsButtonCreator;
+import creational.factorymethod.button.ButtonType;
+import creational.factorymethod.dialogwindow.DialogWindow;
+import creational.factorymethod.dialogwindow.MacDialogWindow;
+import creational.factorymethod.dialogwindow.WindowsDialogWindow;
 
 public class Main {
 
     public static void main(String[] args) {
-        Client client = new Client();
+        DialogWindow dialogWindow = createDialogWindow(ButtonType.MAC);
+        dialogWindow.clickButton();
 
-        ButtonCreator buttonCreator = new MacButtonCreator();
-        client.createButton(buttonCreator);
-        client.getButton().click();
+        dialogWindow = createDialogWindow(ButtonType.WINDOWS);
+        dialogWindow.clickButton();
+    }
 
-        buttonCreator = new WindowsButtonCreator();
-        client.createButton(buttonCreator);
-        client.getButton().click();
+    private static DialogWindow createDialogWindow(ButtonType buttonType) {
+        switch (buttonType) {
+            case MAC -> {
+                return new MacDialogWindow();
+            }
+            case WINDOWS -> {
+                return new WindowsDialogWindow();
+            }
+            default -> throw new IllegalArgumentException("No such button type!");
+        }
+
     }
 
 }

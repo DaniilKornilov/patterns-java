@@ -1,9 +1,9 @@
-package creational.factorymethod.creator;
+package creational.factorymethod.dialogwindow;
 
 import creational.factorymethod.button.Button;
 import creational.factorymethod.button.WindowsButton;
 
-public class WindowsButtonCreator extends ButtonCreator {
+public class WindowsDialogWindow extends DialogWindow {
 
     @Override
     public Button createButton() {
